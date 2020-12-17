@@ -189,8 +189,7 @@ public class Main {
 	 *  학생정보 입력 함수
 	 * */
 	static ArrayList<Student> students = new ArrayList<Student>();
-	static StudentExpel studentExpel = new StudentExpel();
-	
+	static StudentExpel studentExpel = new StudentExpel();	
 	private static void addStudent(String stName, int iAge, int iStNum, String stMajor, String stSex) {
 		students.add(new Student(stName, iAge, iStNum, stMajor, stSex));
 		System.out.println(stName + " 학생정보 입력 성공!!");
@@ -213,6 +212,7 @@ public class Main {
 		
 		System.out.println(manager.students.get(0).getStName());
 	}
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 //		ex4_1();
@@ -222,6 +222,7 @@ public class Main {
 //		ex6_1();
 //		ex6_2();
 		ex9_1();
+		
 	}
 
 }
