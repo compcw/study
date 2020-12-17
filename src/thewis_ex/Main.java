@@ -195,14 +195,7 @@ public class Main {
 		students.add(new Student(stName, iAge, iStNum, stMajor, stSex));
 		System.out.println(stName + " ÇÐ»ýÁ¤º¸ ÀÔ·Â ¼º°ø!!");
 	}
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-//		ex4_1();
-//		ex4_2();
-//		ex4_3();
-//		ex5_1();
-//		ex6_1();
-//		ex6_2();
+	public static void ex9_1() {
 		Main manager = new Main();
 		manager.addStudent("È«±æµ¿", 22, 20201234, "¿¬±Ø¿µÈ­°ú", "Male");
 		manager.addStudent("È«±æ¼ø", 24, 20205678, "¼öÇÐ°ú", "Female");
@@ -219,6 +212,16 @@ public class Main {
 		manager.students.get(0).updateData(1, "È«±æ¶Ë");
 		
 		System.out.println(manager.students.get(0).getStName());
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		ex4_1();
+//		ex4_2();
+//		ex4_3();
+//		ex5_1();
+//		ex6_1();
+//		ex6_2();
+		ex9_1();
 	}
 
 }
