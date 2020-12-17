@@ -20,5 +20,67 @@ public class Student {
 		this.stMajor = stMajor;
 		this.stSex = stSex;
 	}
+	
+	public void updateData(int i, String info) {
+		switch(i) {
+		case 1: //stName
+			setStName(info);
+			break;
+		case 2: //iAge
+			setiAge(Integer.parseInt(info));
+			break;
+		case 3: //iStNum
+			setiStNum(Integer.parseInt(info));
+			break;
+		case 4: //stMajor
+			setStMajor(info);
+			break;
+		case 5: //stSex
+			setStSex(info);
+			break;
+		}
+	}
+
+	public String getStName() {
+		return stName;
+	}
+
+	public void setStName(String stName) {
+		this.stName = stName;
+	}
+
+	public int getiAge() {
+		return iAge;
+	}
+
+	public void setiAge(int iAge) {
+		this.iAge = iAge;
+	}
+
+	public int getiStNum() {
+		return iStNum;
+	}
+
+	public void setiStNum(int iStNum) {
+		this.iStNum = iStNum;
+	}
+
+	public String getStMajor() {
+		return stMajor;
+	}
+
+	public void setStMajor(String stMajor) {
+		this.stMajor = stMajor;
+	}
+
+	public String getStSex() {
+		return stSex;
+	}
+
+	public void setStSex(String stSex) {
+		this.stSex = stSex;
+	}
+	
+	
 
 }

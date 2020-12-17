@@ -3,8 +3,8 @@ package thewis_ex;
 import java.util.*;
 
 public class Main {
-	// if문 예제
-	// 점수 입력 후 평균, 각 점수 판단하기
+	/* if문 예제
+	// 점수 입력 후 평균, 각 점수 판단하기*/
 	public static void ex4_1() {
 		System.out.print("국어점수를 입력하세요 : ");
 		Scanner sc = new Scanner(System.in);
@@ -185,7 +185,16 @@ public class Main {
 		return result;
 	}
 	
+	/*
+	 *  학생정보 입력 함수
+	 * */
+	static ArrayList<Student> students = new ArrayList<Student>();
+	static StudentExpel studentExpel = new StudentExpel();
 	
+	private static void addStudent(String stName, int iAge, int iStNum, String stMajor, String stSex) {
+		students.add(new Student(stName, iAge, iStNum, stMajor, stSex));
+		System.out.println(stName + " 학생정보 입력 성공!!");
+	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 //		ex4_1();
@@ -194,6 +203,22 @@ public class Main {
 //		ex5_1();
 //		ex6_1();
 //		ex6_2();
+		Main manager = new Main();
+		manager.addStudent("홍길동", 22, 20201234, "연극영화과", "Male");
+		manager.addStudent("홍길순", 24, 20205678, "수학과", "Female");
+		manager.addStudent("이은경", 21, 20209012, "국문과", "Female");
+		manager.addStudent("김정수", 23, 20203456, "체육과", "Male");
+		manager.addStudent("김순희", 26, 20207890, "무용과", "Female");
+		
+		System.out.println(manager.students.get(0).getStName());
+		System.out.println(manager.students.get(0).getiAge());
+		System.out.println(manager.students.get(0).getiStNum());
+		System.out.println(manager.students.get(0).getStMajor());
+		System.out.println(manager.students.get(0).getStSex());
+		
+		manager.students.get(0).updateData(1, "홍길똥");
+		
+		System.out.println(manager.students.get(0).getStName());
 	}
 
 }
