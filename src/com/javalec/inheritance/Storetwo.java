@@ -11,6 +11,7 @@ public class Storetwo extends CompanyMenu {
 		// TODO Auto-generated constructor stub
 	}
 	
+	
 	@Override
 	public void Mix() {
 		// TODO Auto-generated method stub
@@ -27,6 +28,12 @@ public class Storetwo extends CompanyMenu {
 	public void rice() {
 		// TODO Auto-generated method stub
 		System.out.println("공기밥 : 무료");
+	}
+
+	@Override
+	public void storeName() {
+		// TODO Auto-generated method stub
+		System.out.println("스토어2");
 	}
 
 }

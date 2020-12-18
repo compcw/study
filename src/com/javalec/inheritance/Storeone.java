@@ -12,6 +12,12 @@ public class Storeone extends CompanyMenu {
 	}
 	
 	@Override
+	public void storeName() {
+		// TODO Auto-generated method stub
+		System.out.println("½ºÅä¾î1");
+	}
+	
+	@Override
 	public void Kimchi() {
 		// TODO Auto-generated method stub
 		System.out.println("±èÄ¡Âî°³ : 4,500¿ø");

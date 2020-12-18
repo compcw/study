@@ -1,6 +1,6 @@
 package com.javalec.inheritance;
 
-public class CompanyMenu {
+public abstract class CompanyMenu {
 	String stClass = "본사 메뉴";
 	
 	private int iPriceKimchi;
@@ -21,6 +21,8 @@ public class CompanyMenu {
 	}
 	
 	//매소드
+	public abstract void storeName();
+	
 	public void Kimchi() {
 		System.out.println("김치찌개 : 5,000원");
 	}
